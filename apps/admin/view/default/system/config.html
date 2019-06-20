@@ -72,6 +72,14 @@
 		                </div>
 		                
 		                <div class="layui-form-item">
+		                     <label class="layui-form-label">会话文件路径</label>
+		                     <div class="layui-input-block">
+		                     	<input type="radio" name="session_in_sitepath" value="1" {if([$configs.session_in_sitepath.value]==1)} checked="checked" {/if} title="站内">
+								<input type="radio" name="session_in_sitepath" value="0" {if([$configs.session_in_sitepath.value]==0)} checked="checked" {/if} title="系统">
+		                     </div>
+		                </div>
+		                
+		                <div class="layui-form-item">
 		                     <label class="layui-form-label">分页数字条数量</label>
 		                     <div class="layui-input-inline">
 		                     	<input type="text" name="pagenum"  value="{$configs.pagenum.value}" placeholder="请输入前端分页数字条显示数量"  class="layui-input">

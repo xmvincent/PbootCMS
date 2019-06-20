@@ -16,6 +16,9 @@ return array(
     // 模板内容缓存有效时间（秒）
     'tpl_html_cache_time' => 900,
     
+    // 会话文件使用网站路径
+    'session_in_sitepath' => 1,
+    
     // 默认分页大小
     'pagesize' => 15,
     

@@ -38,7 +38,8 @@ class ConfigController extends Controller
                     'pagenum',
                     'url_type',
                     'tpl_html_cache',
-                    'tpl_html_cache_time'
+                    'tpl_html_cache_time',
+                    'session_in_sitepath'
                 );
                 if (in_array($key, $config)) {
                     if ($key == 'tpl_html_cache_time' && ! $value) {
@@ -76,6 +77,7 @@ class ConfigController extends Controller
         $configs['debug']['value'] = $this->config('debug');
         $configs['sn']['value'] = $this->config('sn');
         $configs['sn_user']['value'] = $this->config('sn_user');
+        $configs['session_in_sitepath']['value'] = $this->config('session_in_sitepath');
         $configs['pagenum']['value'] = $this->config('pagenum');
         $configs['url_type']['value'] = $this->config('url_type');
         $configs['tpl_html_cache']['value'] = $this->config('tpl_html_cache');
